@@ -52,7 +52,6 @@ nav a i{
 /* HAMBURGUER */
 .hamburguer{
     display: none;
-    transform: rotate(88deg);
 
 }
 .hamburguer a{
