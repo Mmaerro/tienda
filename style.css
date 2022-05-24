@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300&display=swap');
+
+/*!   NAV  */
+
+nav{
+    background: linear-gradient(#000000, rgb(0, 0, 0, 0));
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: 0.3s ;
+}
+nav a{
+  text-decoration: none;
+  margin-left: 50px;
+  color: #ffff;
+  font-family: 'Caveat', cursive;
+  letter-spacing: 1px;
+  font-weight: 400;
+  position: relative;
+}
+nav a::after{
+  content: '';
+  position: absolute;
+  background-color: #395981;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+nav a:hover::after{
+  width: 100%;
+}
+nav a:last-of-type{
+  margin-right: 30px;
+}
+nav a i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+/* HAMBURGUER */
+.hamburguer{
+    display: none;
+    transform: rotate(90deg);
+
+}
+.hamburguer a{
+   color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900px;
+
+}
+
+  /*! boton de buscar  */
+/*  search box */
+.search-box{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Lato';
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 30px;
+    width: 30px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    padding-right: 40px;
+  }
+  .input-search::placeholder{
+    color:rgba(255, 255, 255, 0.653);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus{
+    color: #ffff;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 200px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255, 255, 255, 0.612);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 210px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255, 255, 255, 0.792);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+  /*! menu desplegable  */
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left:  0;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-x: hidden;
+    background-color: #f2f2f2;
+    border-right: rgb(85, 85, 85) 1px solid;
+    box-shadow: 5px 0px 200px rgb(86, 86, 86);
+    text-align: center;
+  }
+  /* Position and style the close button (top right corner) */
+  
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav h3{
+  margin-top: 40px;
+  font-size: 40px; 
+  letter-spacing: 5px;
+}
+
+.sidenav ul{
+  margin-top: 30px;
+list-style: none;
+}
+.sidenav ul li{
+  padding-bottom: 15px;
+   border-bottom: 1px solid #395981;
+  margin-top: 10px;
+}
+.sidenav ul li a{
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+} 
+/*.sidenav h3{  
+  font-size: 40px; 
+  letter-spacing: 5px;
+}
+*/
+
+
+
+  /*! HEADER  */
+  header{
+    background: url(img/jeans-5394561_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: -55px;
+    overflow: hidden;
+  }
+.div{
+  clip-path: polygon(0 7%, 0 0, 7% 0, 100% 93%, 100% 100%, 93% 100%);
+  background-color: #fff;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div h1{
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+  z-index: 10000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: .16667em;
+}
+.words{
+    overflow: hidden;
+}
+.wraper{
+  box-sizing: content-box;
+    height: 70px;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 8px;
+    transform: rotate(28.5deg);
+  }
+span{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: .16667em;
+
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0e6ffc;
+    animation: spin_words 6s infinite;
+}
+@keyframes spin_words{
+  10%{
+      transform: translateY(-112%);
+  }
+  25%{
+      transform: translateY(-100%);
+  }
+  35%{
+      transform: translateY(-212%);
+  }
+  50%{
+      transform: translateY(-200%);
+  }
+  60%{
+      transform: translateY(-312%);
+  }
+  75%{
+      transform: translateY(-300%);
+  }
+  85%{
+      transform: translateY(-412%);
+  }
+  100%{
+      transform: translateY(-400%);
+  }
+}
+
+  /*! MAIN  */
+
+    main{
+    height: 800px;
+  }
+  
+
+
+
+  /*! MEDIA QUERIES */
+  @media screen and (max-width: 1100px) {
+    nav a{
+      margin-left: 20px;
+    }
+    .hamburguer {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hamburguer a{
+      margin: 0px 0px 0px 30px;
+    }
+  nav a:nth-child(3),
+  nav a:nth-child(4),
+  nav a:nth-child(5){
+    display: none;
+  }
+  nav a:nth-child(1):after,
+  nav a:nth-child(2):after{
+    background-color: transparent;
+  }
+  .words{
+    width: 90vw;
+  }
+  .wraper{
+    transform: rotate(52.5deg);
+    height: 42px;
+    padding: 30px 0px;
+    width: fit-content;
+  }
+  .wraper h1{
+    width: auto;
+    font-size: 30px;
+  }
+  .wraper span{
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+    header{
+      height: 500px;
+    }
+    /* .div{
+      transform: rotate(-10deg);
+    } */
+}
