@@ -20,21 +20,18 @@ function scrollFunction() {
   }
 }
 
-
+overlay.addEventListener('click', function(){
+  SideNav.style.width = "0";
+  overlay.style.width = "0";
+})
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
   SideNav.style.width = "250px";
   overlay.style.width = "100vw";
 }
-function overlayClose(){
- 
-  
-}
 /* Set the width of the side navigation to 0 */
 function closeNav() { 
-  overlay.addEventListener('click', function(){
     SideNav.style.width = "0";
     overlay.style.width = "0";
-  })
 }

@@ -51,17 +51,17 @@ nav a i{
 }
 /* HAMBURGUER */
 .hamburguer{
-  display: none;
-  transform: rotate(90deg);
+display: none;
 
 }
 .hamburguer a{
- color: #fff;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 900px;
+color: #fff;
+text-decoration: none;
+font-size: 30px;
+font-weight: 900px;
 
 }
+
 
 /*! boton de buscar  */
 /*  search box */
