@@ -135,7 +135,7 @@ font-weight: 900px;
 /*! menu desplegable  */
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: 100vh; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1000; /* Stay on top */
@@ -161,50 +161,9 @@ font-weight: 900px;
   overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.434);
 }
-/* .sidenav a {
-text-decoration: none;
-font-size: 25px;
-color: #818181;
-display: block;
-transition: 0.3s;
-}
-.sidenav .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-}
-.sidenav h3{
-margin-top: 40px;
-font-size: 40px; 
-letter-spacing: 5px;
-}
-
-.sidenav ul{
-margin-top: 30px;
-list-style: none;
-}
-.sidenav ul li{
-padding-bottom: 15px;
- border-bottom: 1px solid #395981;
-margin-top: 10px;
-}
-.sidenav ul li a{
-font-family: 'Caveat', cursive;
-font-size: 22px;
-text-decoration: none;
-color: #000;
-}  */
-/*.sidenav h3{  
-font-size: 40px; 
-letter-spacing: 5px;
-}
-*/
 .sidenav{
   display: grid;
   grid: repeat(1, 100vw) / repeat(4, 1fr);
-  overflow: hidden;
 }
 .tab{
   background-color: #eeeeee;
@@ -229,7 +188,7 @@ letter-spacing: 5px;
 
 .tablink a{
 text-decoration: none;
-color: #000;
+color: red;
 }
 .tab i{
   font-size: 20px;
