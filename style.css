@@ -272,7 +272,7 @@ box-sizing: content-box;
   display: flex;
   border-radius: 8px;
   transform: rotate(28.5deg);
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 span{
@@ -332,11 +332,9 @@ letter-spacing: .16667em;
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
-  .hamburguer a{
-    margin: 0px 0px 0px 30px;
-  }
+  
 nav a:nth-child(3),
 nav a:nth-child(4),
 nav a:nth-child(5){
@@ -347,7 +345,7 @@ nav a:nth-child(2):after{
   background-color: transparent;
 }
 .words{
-  width: 90vw;
+  width: 100vw;
 }
 .wraper{
   transform: rotate(52.5deg);
@@ -356,12 +354,13 @@ nav a:nth-child(2):after{
   width: fit-content;
 }
 .wraper h1{
-  width: auto;
+  width: 80%;
   font-size: 30px;
 }
 .wraper span{
   text-transform: uppercase;
   font-size: 30px;
+  padding: 0px;
 }
 header{
   background-size: cover;
