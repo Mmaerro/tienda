@@ -177,6 +177,18 @@ font-weight: 900px;
   margin: 0;
   position: relative;
 }
+.moreContent{
+  top: 0;
+  left: 90px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.moreContent a{
+  color: red !important;
+  font-size: 17px;
+}
 .tablink{
   background-color: #eeeeee;
   display: flex;
@@ -220,12 +232,18 @@ color: #333333;
   width: 100%;
   font-weight: 800;
   text-align: left;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 .tabcontent ul li a{
   color: #555555;
   letter-spacing: 1px;
   line-height: 22px;
   text-decoration: none;
+}
+.tabcontent span{
+  color: #555555; 
 }
 #Coleccion {background-color: #fff;}
 #Catalogo{background-color: #ffff;}
@@ -275,7 +293,7 @@ box-sizing: content-box;
   text-align: left;
   text-transform: uppercase;
 }
-span{
+.wraper span{
 font-family: 'Open Sans Condensed', sans-serif;
 font-weight: 300;
 font-size: 3rem;

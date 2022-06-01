@@ -27,7 +27,7 @@ overlay.addEventListener('click', function(){
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-  SideNav.style.width = "330px";
+  SideNav.style.width = "350px";
   overlay.style.width = "100vw";
 }
 /* Set the width of the side navigation to 0 */
@@ -35,7 +35,20 @@ function closeNav() {
     SideNav.style.width = "0";
     overlay.style.width = "0";
 }
-
+function moreContent(pageName){
+  var i, moreContent, btnCont;
+  moreContent = document.getElementsByClassName('moreContent');
+  for(i= 0; i < moreContent.length; i++){
+    moreContent[i].style.display ='none';
+  }
+  
+  btnCont = document.getElementsByClassName("btncont");
+  for (i = 0; i < btnCont.length; i++) {
+    btnCont[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  
+}
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
