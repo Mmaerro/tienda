@@ -179,7 +179,6 @@ font-weight: 900px;
 }
 .tablink{
   background-color: #eeeeee;
-  font-size: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,12 +190,15 @@ font-weight: 900px;
 
 .tablink a{
 text-decoration: none;
-color: #000;
-font-weight: 500;
+color: #333333;
+  font-size: 10px;
+  z-index: 10;
+  font-weight: 500;
+  font-family: "Poppins",sans-serif;
 }
 .tab i{
-  font-size: 20px;
-  color: rgb(0, 0, 0);
+  font-size: 18px;
+  color: #333333;
 }
 .content{
   background-color: #fff;
@@ -208,18 +210,19 @@ font-weight: 500;
 .tabcontent ul{
   display: grid;
   grid: repeat(1, 100%) / repeat(auto);
-  font-size: 15px;
+  font-size: 14px;
   list-style: none;
   font-family: 'Poppins', sans-serif;
 }
 .tabcontent ul li{
   border-bottom: 0.5px solid #8282824c;
-  padding: 18px ;
+  padding: 20px ;
+  width: 100%;
   font-weight: 800;
   text-align: left;
 }
 .tabcontent ul li a{
-  color: #000;
+  color: #555555;
   letter-spacing: 1px;
   line-height: 22px;
   text-decoration: none;
