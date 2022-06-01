@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300&display=swap');
+
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300&display=swap');
 
 /*!   NAV  */
 
@@ -159,7 +161,7 @@ font-weight: 900px;
   overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.434);
 }
-.sidenav a {
+/* .sidenav a {
 text-decoration: none;
 font-size: 25px;
 color: #818181;
@@ -193,14 +195,75 @@ font-family: 'Caveat', cursive;
 font-size: 22px;
 text-decoration: none;
 color: #000;
-} 
+}  */
 /*.sidenav h3{  
 font-size: 40px; 
 letter-spacing: 5px;
 }
 */
+.sidenav{
+  display: grid;
+  grid: repeat(1, 100%) / repeat(4, 1fr);
+}
+.tab{
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  position: relative;
+}
+.tablink{
+  background-color: #eeeeee;
+  font-size: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  height: fit-content;
+}
 
+.tablink a{
+text-decoration: none;
+color: #000;
+}
+.tab i{
+  font-size: 20px;
+  color: black;
+}
+.content{
+  background-color: #fff;
+  grid-row: 1/ 4;
+  grid-column: 2/ 5;
+  height: 100vh;
+  width: 100%;
 
+}
+.tabcontent ul{
+  display: grid;
+  grid: repeat(1, 100%) / repeat(auto);
+  font-size: 15px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+.tabcontent ul li{
+  border-bottom: 0.5px solid #8282824c;
+  padding: 15px ;
+  font-weight: 800;
+  text-align: left;
+}
+.tabcontent ul li a{
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 22px;
+  text-decoration: none;
+}
+#Coleccion {background-color: #fff;}
+#Catalogo{background-color: #ffff;}
+#Nosotros {background-color: #fff;}
 
 /*! HEADER  */
 header{
@@ -243,6 +306,8 @@ box-sizing: content-box;
   display: flex;
   border-radius: 8px;
   transform: rotate(28.5deg);
+  text-align: center;
+  text-transform: uppercase;
 }
 span{
 font-family: 'Open Sans Condensed', sans-serif;
