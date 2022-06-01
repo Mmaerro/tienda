@@ -210,7 +210,20 @@ color: #333333;
 }
 .tab i{
   font-size: 18px;
-  color: #333333;
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
 }
 .content{
   background-color: #fff;
