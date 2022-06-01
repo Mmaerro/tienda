@@ -47,6 +47,9 @@ width: 100%;
 nav a:last-of-type{
 margin-right: 30px;
 }
+nav a:nth-child(2):after{
+  background-color:transparent;
+}
 nav a i{
   margin-right: 10px;
   font-size: 25px;
@@ -166,7 +169,6 @@ font-weight: 900px;
   grid: repeat(1, 100vw) / repeat(4, 1fr);
 }
 .tab{
-  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -177,26 +179,27 @@ font-weight: 900px;
 }
 .tablink{
   background-color: #eeeeee;
-  font-size: 9px;
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  padding: 10px;
+  padding: 12px 10px;
   height: fit-content;
+  clip-path: polygon(100% 0, 100% 42%, 93% 51%, 100% 59%, 100% 100%, 0 100%, 0 0);
 }
 
 .tablink a{
 text-decoration: none;
 color: #000;
+font-weight: 500;
 }
 .tab i{
   font-size: 20px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .content{
   background-color: #fff;
-  grid-row: 1/ 4;
   grid-column: 2/ 5;
   height: 100vh;
   width: 100%;
@@ -211,7 +214,7 @@ color: #000;
 }
 .tabcontent ul li{
   border-bottom: 0.5px solid #8282824c;
-  padding: 15px ;
+  padding: 18px ;
   font-weight: 800;
   text-align: left;
 }

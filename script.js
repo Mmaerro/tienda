@@ -27,7 +27,7 @@ overlay.addEventListener('click', function(){
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-  SideNav.style.width = "300px";
+  SideNav.style.width = "330px";
   overlay.style.width = "100vw";
 }
 /* Set the width of the side navigation to 0 */
