@@ -203,7 +203,8 @@ letter-spacing: 5px;
 */
 .sidenav{
   display: grid;
-  grid: repeat(1, 100%) / repeat(4, 1fr);
+  grid: repeat(1, 100vw) / repeat(4, 1fr);
+  overflow: hidden;
 }
 .tab{
   background-color: #eeeeee;
