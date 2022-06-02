@@ -293,7 +293,7 @@ header{
 }
 .div{
 clip-path: polygon(0 7%, 0 0, 7% 0, 100% 93%, 100% 100%, 93% 100%);
-background-color: #fff;
+background-color: #eeeeee;
 width: 100%;
 height: 100%; 
 display: flex;
@@ -371,11 +371,12 @@ letter-spacing: .16667em;
    bottom: 30px;
    border-radius: 50%;
    background-color: #25D366;
+   display: flex;
    justify-content: center;
    align-items: center;
-   display: flex;
    z-index: 100000;
  }
+
  .wpp i{
    position: sticky;
    font-size: 40px;
@@ -384,9 +385,13 @@ letter-spacing: .16667em;
 /*! MAIN  */
 
   main{
+    margin-top: -20px;
+    padding-top: 40px;
   height: 900px;
   overflow: hidden;
+  background-color: #eeeeee;
 }
+/*! new droping */
 
 
 
@@ -434,6 +439,25 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: local;
+}
+
+.new-dropin{
+  width: 100vw;
+  height: 500px;
+}
+.new-dropin div{
+  display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+
+}
+.new-dropin figure{
+  margin: 5px;
+}
+.new-dropin figure img{
+width: 170px;
+height:150px;
 }
 }
 
