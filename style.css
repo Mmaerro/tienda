@@ -198,8 +198,8 @@ color: #333333;
 }
 .tab i{
   font-size: 18px;
-  background: linear-gradient(to left,#cb3066, #16bffd, #cb3066, #16bffd, #cb3066, #16bffd, #cb3066); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background-size: 500% 500%;
+  background: linear-gradient(to right,#cb3066, #16bffd, #cb3066, #16bffd, #cb3066, #16bffd, #cb3066); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-size: 400% 400%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -232,9 +232,16 @@ color: #333333;
   height: 100%;
   background-color: rgb(255, 255, 255);
 }
+.moreContent i{
+  font-size: 10px;
+  padding-right: 10px;
+  position: relative;
+  bottom: 2px;
+}
 .moreContent a{
   color: red !important;
   font-size: 17px;
+  
 }
 .tabcontent ul{
   display: grid;
@@ -261,6 +268,13 @@ color: #333333;
 }
 .tabcontent span{
   color: #555555; 
+  
+  background: linear-gradient(to right,#cb3066, #16bffd, #cb3066, #16bffd, #cb3066, #16bffd, #cb3066); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
 }
 #Coleccion {background-color: #fff;}
 #Catalogo{background-color: #ffff;}
