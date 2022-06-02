@@ -375,6 +375,7 @@ letter-spacing: .16667em;
    justify-content: center;
    align-items: center;
    display: flex;
+   z-index: 1000;
  }
  .wpp i{
    position: sticky;
