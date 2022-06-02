@@ -147,7 +147,6 @@ font-weight: 900px;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   overflow-x: hidden;
   background-color: #f2f2f2;
-  border-right: rgb(85, 85, 85) 1px solid;
   box-shadow: 5px 0px 200px rgb(86, 86, 86);
   text-align: center;
 }
