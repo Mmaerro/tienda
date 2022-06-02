@@ -375,7 +375,7 @@ letter-spacing: .16667em;
    justify-content: center;
    align-items: center;
    display: flex;
-   z-index: 1000;
+   z-index: 100000;
  }
  .wpp i{
    position: sticky;
@@ -386,6 +386,7 @@ letter-spacing: .16667em;
 
   main{
   height: 900px;
+  overflow: hidden;
 }
 
 
