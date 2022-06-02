@@ -363,10 +363,28 @@ letter-spacing: .16667em;
 }
 }
 
+/*! WAHTSAP  */
+ .wpp{
+   position: fixed;
+   width: 55px;
+   height: 55px;
+   right: 20px;
+   bottom: 30px;
+   border-radius: 50%;
+   background-color: #25D366;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+ }
+ .wpp i{
+   position: sticky;
+   font-size: 40px;
+   color: white;
+ }
 /*! MAIN  */
 
   main{
-  height: 800px;
+  height: 900px;
 }
 
 
