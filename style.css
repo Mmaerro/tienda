@@ -398,8 +398,8 @@ letter-spacing: .16667em;
 
 .new-dropin{
  display: flex;
-justify-content: space-between;
- height: auto;
+justify-content: space-evenly;
+ height: fit-content;
  width: 90vw;
  margin: 0 auto ;
 }
@@ -444,6 +444,12 @@ height:150px;
 }
 
 /*! MEDIA QUERIES */
+@media screen and (max-width: 1300px) {
+  
+  .new-dropin > div:last-of-type{
+    display: none;
+  }
+}
 @media screen and (max-width: 1100px) {
   nav a{
     margin-left: 20px;
@@ -487,7 +493,7 @@ header{
   background-repeat: no-repeat;
   background-attachment: local;
 }
-
+/* 
 .new-dropin{
   width: 100vw;
   height: 500px;
@@ -505,9 +511,27 @@ header{
 .new-dropin figure img{
 width: 170px;
 height:150px;
+} */
 }
+@media screen and (max-width: 883px) {
+  .new-dropin{
+width: 100vw;
+flex-direction: column;
+  }
+  .new-dropin >div{
+    text-align: right;
+    margin-bottom: 40px;
+    border-radius: 0;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.642);
+  
+  }
+  .content-figure{
+    height: auto;
+   display: grid;
+    grid: repeat(1, 1fr) / repeat(4, 1fr); 
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;}
 }
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 450px) {
   header{
