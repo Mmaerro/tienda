@@ -389,7 +389,7 @@ letter-spacing: .16667em;
   main{
     margin-top: -20px;
     padding-top: 40px;
-  height: 900px;
+  height: auto;
   overflow: hidden;
   background-color: #eeeeee;
 }
@@ -441,6 +441,14 @@ height:150px;
 .new-dropin > div i{
   padding: 10px;
   font-size: 15px;
+}
+
+/*! FOOTER */
+footer{
+  height: 200px;
+  width: 100vw;
+  color: #fff;
+  background:#000;
 }
 
 /*! MEDIA QUERIES */
@@ -515,22 +523,25 @@ height:150px;
 }
 @media screen and (max-width: 883px) {
   .new-dropin{
-width: 100vw;
+width: 95vw;
 flex-direction: column;
   }
   .new-dropin >div{
     text-align: right;
-    margin-bottom: 40px;
-    border-radius: 0;
-    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.642);
+    margin-bottom: 30px;
+    box-shadow: none;
   
   }
   .content-figure{
     height: auto;
    display: grid;
-    grid: repeat(1, 1fr) / repeat(4, 1fr); 
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;}
+    grid: repeat(2, 1fr) / repeat(2, 1fr); 
+   
+  }
+  .new-dropin figure img{
+    width: 150px;
+    height:130px;
+    }
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-width: 450px) {
