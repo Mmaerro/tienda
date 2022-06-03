@@ -13,10 +13,10 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     nav.style.background = "#000000";
-    nav.style.height = "50px";
+    nav.style.height = "60px";
   } else {
     nav.style.background = "linear-gradient(#000000, rgb(0, 0, 0, 0))";
-    nav.style.height = "60px";
+    nav.style.height = "50px";
   }
 }
 
@@ -27,7 +27,7 @@ overlay.addEventListener('click', function(){
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-  SideNav.style.width = "350px";
+  SideNav.style.width = "90vw";
   overlay.style.width = "100vw";
 }
 /* Set the width of the side navigation to 0 */
