@@ -291,77 +291,28 @@ header{
   width: 100%;
   margin: 0 auto;
   margin-top: -65px;
-  overflow: hidden;
+  overflow: auto;
+  display: flex;
+  align-items: center;
 }
 .div{
-clip-path: polygon(0 7%, 0 0, 7% 0, 100% 93%, 100% 100%, 93% 100%);
-background-color: #eeeeee;
-width: 100%;
-height: 100%; 
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.div h1{
-text-align: center;
-color: #000;
-font-size: 50px;
-z-index: 10000;
-font-family: 'Open Sans Condensed', sans-serif;
-font-weight: 300;
-font-size: 3rem;
-letter-spacing: .16667em;
-}
-.words{
-  overflow: hidden;
-}
-.wraper{
-box-sizing: content-box;
-  height: 70px;
-  padding: 50px 30px;
-  display: flex;
-  border-radius: 8px;
-  transform: rotate(28.5deg);
-  text-align: left;
-  text-transform: uppercase;
-}
-.wraper span{
-font-family: 'Open Sans Condensed', sans-serif;
-font-weight: 300;
-font-size: 3rem;
-letter-spacing: .16667em;
+  background-color: rgba(255, 0, 0, 0.596);
+  width: 45%;
+  height: 65%;
 
-  display: block;
-  height: 100%;
-  padding-left: 10px;
-  color: #0e6ffc;
-  animation: spin_words 6s infinite;
 }
-@keyframes spin_words{
-10%{
-    transform: translateY(-112%);
+.poligon{
+margin-left: 50%;
 }
-25%{
-    transform: translateY(-100%);
-}
-35%{
-    transform: translateY(-212%);
-}
-50%{
-    transform: translateY(-200%);
-}
-60%{
-    transform: translateY(-312%);
-}
-75%{
-    transform: translateY(-300%);
-}
-85%{
-    transform: translateY(-412%);
-}
-100%{
-    transform: translateY(-400%);
-}
+.poligon p{
+  background: linear-gradient(to right, white 0%, white 50%, red 50%, red 100% );
+  color: white;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 150px;
+  z-index: 100000000;
 }
 
 /*! WAHTSAP  */
@@ -446,7 +397,7 @@ height:150px;
 /*! FOOTER */
 footer{
   height: 200px;
-  width: 100vw;
+  width: 100%;
   color: #fff;
   background:#000;
 }
